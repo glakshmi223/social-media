@@ -1,0 +1,25 @@
+use social_media;
+
+create table users (
+      id integer primary key auto_increment,
+      name varchar(50),
+      profile varchar(50),
+      password varchar(50),
+      headline varchar(100),
+      token varchar(500)
+);
+
+create table posts (
+      profile varchar(50),
+      content varchar(5000),
+      likes integer,
+      shares integer
+);
+
+insert  into users (name, profile, password, headline, token)
+values ('Lakshmi', 'Lakshmi_girijala', 'Dippam@84', 'Home maker', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'),
+('Rajesh', 'Rajesh_duddupudi', 'rajyam@84', 'Manager', 'eyJhbG ciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c')
+
+
+insert into posts (profile, content, likes, shares)
+values ('Lakshmi_girijala', 'I am truly delighted to have this application in my journey towards IT sector, as everything in detail manner , one can have easy access to learn in their convenience time', 7, 5), ('Rajesh_duddupudi','With remote learning and emerging technologies like artificial intelligence (AI), social media is an integral part of education more than ever. There are many different ways to use social media for education inside and outside the classroom,',6,8) ;
